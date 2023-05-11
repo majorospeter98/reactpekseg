@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/reactpekseg/static/css/main.98f23c72.css",
-    "main.js": "/reactpekseg/static/js/main.71e2883a.js",
+    "main.css": "/reactpekseg/static/css/main.4425223a.css",
+    "main.js": "/reactpekseg/static/js/main.c54adcb5.js",
     "static/js/787.dcdb76b0.chunk.js": "/reactpekseg/static/js/787.dcdb76b0.chunk.js",
     "static/media/pizzaquote.jpg": "/reactpekseg/static/media/pizzaquote.3b92656a032f44425312.jpg",
     "static/media/fotimg2.jpg": "/reactpekseg/static/media/fotimg2.f132b28d87f5c824bdd9.jpg",
@@ -24,12 +24,12 @@
     "static/media/muffin.webp": "/reactpekseg/static/media/muffin.b2a3a71770c8d7d554e1.webp",
     "static/media/logo.svg": "/reactpekseg/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/reactpekseg/index.html",
-    "main.98f23c72.css.map": "/reactpekseg/static/css/main.98f23c72.css.map",
-    "main.71e2883a.js.map": "/reactpekseg/static/js/main.71e2883a.js.map",
+    "main.4425223a.css.map": "/reactpekseg/static/css/main.4425223a.css.map",
+    "main.c54adcb5.js.map": "/reactpekseg/static/js/main.c54adcb5.js.map",
     "787.dcdb76b0.chunk.js.map": "/reactpekseg/static/js/787.dcdb76b0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.98f23c72.css",
-    "static/js/main.71e2883a.js"
+    "static/css/main.4425223a.css",
+    "static/js/main.c54adcb5.js"
   ]
 }
