@@ -8,7 +8,7 @@
     line-height: 1.6;
 }
 body{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 a{
     text-decoration: none;
@@ -22,8 +22,14 @@ img{
 }
 :root{
     scroll-behavior: smooth;
-    --main-color:#FF8800;
+    --main-color:#e87500;
 }
+:focus-visible{
+    outline:4px green solid;
+}
+
+
+
 .container{
     max-width:1200px;
     margin:0 auto;
@@ -38,15 +44,14 @@ header{
     align-items: center;
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
-position: relative;
-z-index:4;
-
+    position: relative;
+   z-index:400;
 }
-.navbar ul{
+.navbar{
     display:flex;
     gap:1rem;
     animation: opacityteszt 1100ms ease-in;
-    }
+}
 nav a{
     display:inline-block;
     font-size:1.2rem;
@@ -64,12 +69,12 @@ nav a:hover{
 #headerimage{
     position: relative;
     margin-top:-3rem;
-    background-image:url("img/introimage.jpg");
+    background-image:url("assets/introimage.jpg");
     background-position: center center;
     background-size: cover;
     min-height:100vh;
-    z-index:-2;
-    text-align: center;
+text-align: center;
+z-index:0;
 }
 .weebly{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -88,7 +93,7 @@ nav a:hover{
     display:flex;
     flex-direction: column;
     max-width:60ch;
-  text-align: justify;
+  text-align: left;
         }
     .abouttext p{
         margin:1rem 0rem;
@@ -172,7 +177,7 @@ transform:translateY(-10px);
 }
 #idézet{
     min-height:25rem;
-    background:url("img/pizzaquote.jpg") no-repeat center center/cover;
+    background:url("assets/pizzaquote.jpg") no-repeat center center/cover;
     position: relative;
     z-index:31;
 }
@@ -253,7 +258,6 @@ font-size:2rem;
 .bold{
     font-size:1.8rem;
     font-weight: bold;
-    text-decoration: underline;
     color:var(--main-color);
    }
 .opening2{
@@ -263,7 +267,7 @@ font-size:2rem;
 }
 .footerimage{
     min-height:35rem;
-    background:url("img/fotimg2.jpg") no-repeat center center / cover;
+    background:url("assets/fotimg2.jpg") no-repeat center center / cover;
     position: relative;
     z-index:999999;
 }
@@ -286,7 +290,7 @@ font-size:2rem;
     z-index:-1;
     inset:0;
     mix-blend-mode: multiply;
-    background-color: rgb(66, 45, 5);
+    background-color: #422D05;
 }
 .intro ul{
     display:flex;
@@ -294,11 +298,11 @@ font-size:2rem;
     gap:1rem;
 }
 .intro a{
-    color:var(--main-color)
+    color:var(--main-color);
+    text-align:center;
 }
 .intro h2{
-    text-decoration: underline;
-    margin-bottom:1rem;
+       margin-bottom:1rem;
     text-align: center;
     font-style:italic;
 }
@@ -346,6 +350,11 @@ background-color:var(--main-color);
     }
 }
 /* Media Queries */
+@media (min-width:824px){
+    .navbar ul {
+      display:flex;
+    }
+}
 @media (max-width:1024px){
 header{
    
@@ -354,14 +363,11 @@ header{
     border-radius: 0%;
     margin-bottom:6rem;
 }
-header ul{
-    flex-direction: column;
-        }
 nav{
-    width:100%;
-   }
-nav ul{
-    width:100%;
+    width:90%;
+}
+.navbar{
+    flex-direction: column;
 }
 nav a{
     width:100%;
@@ -376,7 +382,7 @@ nav a:hover{
     border-radius:0rem !important;
     opacity:0.8;
 }
-.navbar{
+.navbar ul{
     display:none;
 }
 .navbar:first-child{
@@ -410,8 +416,9 @@ justify-items: center;
     flex-direction: column;
 }
 .open{
-    display:flex;
+   display:flex;
 }
+
 .intro:first-child  {
     padding-top:4rem;
 }
