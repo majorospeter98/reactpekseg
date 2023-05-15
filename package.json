@@ -1,5 +1,5 @@
 {
-  "homepage": "http://majoros.peter98.github.io/reactpekseg",
+  "homepage": "http://majorospeter98.github.io/reactpekseg",
   "name": "teszt",
   "version": "0.1.0",
   "private": true,
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-     "predeploy": "rpn run build",
+     "predeploy": "npm run build",
      "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",

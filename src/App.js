@@ -17,48 +17,48 @@ function App() {
   }
   return (
     <>
+      <header>
+        <h1>Weebly Pékség</h1>
+        <a href="#" alt="hamburger menu">
+          <img
+            src={require("./assets/menu.png")}
+            className="menulogo"
+            id="menulogo"
+            alt="hamburger menu for small screens"
+            onClick={handleClick}
+          />
+        </a>
+        <nav>
+          <div className={active ? "navbar" : ""}>
+            <ul className="navbar">
+              <li>
+                <a href="index.html">Kezdőlap</a>
+              </li>
+              <li>
+                <a href="#about">Rólunk</a>
+              </li>
+              <li>
+                <a href="#products">Termékek</a>
+              </li>
+              <li>
+                <a href="#reviews">Értékelések</a>
+              </li>
+              <li>
+                <a href="#contacts">Kapcsolat</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <HeaderImage />
       <main>
-        <header>
-          <h1>Weebly Pékség</h1>
-          <a href="#" alt="hamburger menu">
-            <img
-              src={require("./assets/menu.png")}
-              className="menulogo"
-              id="menulogo"
-              alt="hamburger menu for small screens"
-              onClick={handleClick}
-            />
-          </a>
-          <nav>
-            <div className={active ? "navbar" : ""}>
-              <ul className="navbar">
-                <li>
-                  <a href="index.html">Kezdőlap</a>
-                </li>
-                <li>
-                  <a href="#about">Rólunk</a>
-                </li>
-                <li>
-                  <a href="#products">Termékek</a>
-                </li>
-                <li>
-                  <a href="#reviews">Értékelések</a>
-                </li>
-                <li>
-                  <a href="#contacts">Kapcsolat</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-        <HeaderImage />
         <Rolunk />
         <Termekek />
         <Idezet />
         <Ertekelesek />
         <Contact />
-        <Footer />
       </main>
+      <Footer />
     </>
   );
 }

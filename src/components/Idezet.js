@@ -1,6 +1,6 @@
 function Idezet() {
     return (
-      <div>
+      <>
         <section id="idézet" className="gap">
           <div className="idézet">
             <p className="idezet-quote">
@@ -10,7 +10,7 @@ function Idezet() {
             <p>Virginia Woolfs</p>
           </div>
         </section>
-      </div>
+      </>
     );
   }
   export default Idezet;
